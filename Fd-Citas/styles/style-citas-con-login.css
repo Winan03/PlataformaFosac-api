@@ -1,0 +1,136 @@
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.navbar {
+    background-color: #004593;
+}
+.navbar-brand {
+    filter: drop-shadow(5px 5px 10px #ffffff);
+}
+.ml-auto {
+    font-size: 23px;
+}
+.nav-link.active, .nav-link {
+    color: #e4e2e2 !important; /* Color gris para todos los enlaces, incluido el activo */
+    background-color: transparent !important; /* Quita el fondo blanco por defecto */
+}
+.nav-link:hover {
+    color: #ffffff !important; /* Cambia el color al pasar el puntero por encima */
+}
+
+.user-menu {
+    position: relative;
+}
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: #000000;
+}
+.dropdown-item:hover {
+    background-color: #bbbec2;
+    color: #000000;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Body */
+h2.title-center {
+    text-align: center;
+}
+.highlight {
+    background-color: #ADD8E6;
+}
+.empty-list-message {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    flex: 1;
+}
+.back-button {
+    display: none;
+    margin-bottom: 20px;
+}
+.rounded-border {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #004593;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: 20px;
+}
+.footer .fa {
+    margin-right: 10px;
+}
+.footer p a {
+    margin-right: 20px; 
+}
+.footer p span {
+    margin-right: 20px; 
+}
+.footer .fa-facebook {
+    margin-right: 5px; 
+}
+.footer p i {
+    margin-right: 10px; 
+}
+.contact-info {
+    margin-right: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/* Inputs */
+.form-control {
+    font-size: 18px; /* Ajusta el tamaño de la fuente */
+    padding: 10px; /* Ajusta el espacio interno */
+}

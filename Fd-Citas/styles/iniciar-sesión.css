@@ -1,0 +1,104 @@
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header */
+.navbar {
+    background-color: #004593;
+}
+.navbar-brand {
+    filter: drop-shadow(5px 5px 10px #ffffff);
+}
+
+.ml-auto {
+    font-size: 23px;
+}
+.nav-link.active, .nav-link {
+    color: #e4e2e2 !important; /* Color gris para todos los enlaces, incluido el activo */
+    background-color: transparent !important; /* Quita el fondo blanco por defecto */
+}
+.nav-link:hover {
+    color: #ffffff !important; /* Cambia el color al pasar el puntero por encima */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dropdown-item {
+    color: #000000;
+}
+.dropdown-item:hover {
+    background-color: #bbbec2;
+    color: #000000;
+}
+
+/* Este hace que desglose automaticamente */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Body */
+
+h2.title-center {
+    text-align: center;
+}
+
+.highlight {
+    background-color: #ADD8E6;
+}
+.empty-list-message {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    flex: 1;
+}
+.back-button {
+    display: none;
+    margin-bottom: 20px;
+}
+.rounded-border {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #004593;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: 20px;
+}
+.footer .fa {
+    margin-right: 10px;
+}
+.footer p a {
+    margin-right: 20px; 
+}
+.footer p span {
+    margin-right: 20px; 
+}
+.footer .fa-facebook {
+    margin-right: 5px; 
+}
+.footer p i {
+    margin-right: 10px; 
+}
+.contact-info {
+    margin-right: 20px; /* Ajusta el valor según sea necesario */
+}
