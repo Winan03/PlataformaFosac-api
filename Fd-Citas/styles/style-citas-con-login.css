@@ -17,11 +17,11 @@ body {
     font-size: 23px;
 }
 .nav-link.active, .nav-link {
-    color: #e4e2e2 !important; /* Color gris para todos los enlaces, incluido el activo */
-    background-color: transparent !important; /* Quita el fondo blanco por defecto */
+    color: #e4e2e2 !important; 
+    background-color: transparent !important; 
 }
 .nav-link:hover {
-    color: #ffffff !important; /* Cambia el color al pasar el puntero por encima */
+    color: #ffffff !important; 
 }
 
 .user-menu {
@@ -126,11 +126,11 @@ h2.title-center {
     margin-right: 10px; 
 }
 .contact-info {
-    margin-right: 20px; /* Ajusta el valor según sea necesario */
+    margin-right: 20px; 
 }
 
 /* Inputs */
 .form-control {
-    font-size: 18px; /* Ajusta el tamaño de la fuente */
-    padding: 10px; /* Ajusta el espacio interno */
+    font-size: 18px;
+    padding: 10px;
 }

@@ -17,11 +17,11 @@ body {
     font-size: 23px;
 }
 .nav-link.active, .nav-link {
-    color: #e4e2e2 !important; /* Color gris para todos los enlaces, incluido el activo */
-    background-color: transparent !important; /* Quita el fondo blanco por defecto */
+    color: #e4e2e2 !important; 
+    background-color: transparent !important; 
 }
 .nav-link:hover {
-    color: #ffffff !important; /* Cambia el color al pasar el puntero por encima */
+    color: #ffffff !important; 
 }
 
 /* Dropdown Menu */
@@ -38,7 +38,7 @@ body {
     color: #000000;
 }
 
-/* Este hace que desglose automaticamente */
+/* Este hace que desglose automaticamente por las dudas*/
 .nav-item:hover .dropdown-menu {
     display: block;
 }

@@ -57,5 +57,5 @@ $(document).ready(function() {
         updateEmptyMessage();
     });
 
-    updateEmptyMessage(); // Actualiza el mensaje al cargar la página
+    updateEmptyMessage(); 
 });
