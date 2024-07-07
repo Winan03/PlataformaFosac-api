@@ -1,10 +1,9 @@
 package com.mecanicafosac.backend.servicio_notificacion.src.main.java.com.mecanicafosac.servicio_notificacion.domain;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.mecanicafosac.backend.servicio_authenticacion.src.main.java.com.mecanicafosac.servicio_authenticacion.domain.Usuario;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,7 +17,10 @@ public class Notification {
     private Long id;
 
     private String mensaje;
-    private String destinatario;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
+    private Usuario destinatario;
 
 
 }

@@ -22,7 +22,12 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests(authorizeRequests ->
                         authorizeRequests
+                                .requestMatchers("/api/profiles/**").permitAll()
                                 .requestMatchers("/api/auth/**").permitAll()
+                                .requestMatchers("/api/citas/**").permitAll()
+                                .requestMatchers("/api/notifications/**").permitAll()
+                                .requestMatchers("/api/payments/**").permitAll()
+                                .requestMatchers("/api/reviews/**").permitAll()
                                 .anyRequest().permitAll()
                 )
                 .csrf(csrf -> csrf.disable())

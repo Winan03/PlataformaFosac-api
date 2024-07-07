@@ -9,8 +9,8 @@ import java.util.Map;
 @Component
 public class PaymentAdapter {
 
-    private final String CULQI_API_URL = "";
-    private final String CULQI_API_KEY = "";
+    private final String CULQI_API_URL = "https://api.culqi.com/v2";
+    private final String CULQI_API_KEY = "sk_test_1234567890abcdefghijkl";
 
     public Map<String, Object> processPayment(Double amount, String currency, String email, String token) {
         RestTemplate restTemplate = new RestTemplate();

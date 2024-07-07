@@ -20,6 +20,7 @@ public class ProfileService {
             existingProfile.setNombre(profile.getNombre());
             existingProfile.setApellido(profile.getApellido());
             existingProfile.setCorreo(profile.getCorreo());
+            existingProfile.setContraseña(profile.getContraseña());
             return profileRepository.save(existingProfile);
         }
         return null;

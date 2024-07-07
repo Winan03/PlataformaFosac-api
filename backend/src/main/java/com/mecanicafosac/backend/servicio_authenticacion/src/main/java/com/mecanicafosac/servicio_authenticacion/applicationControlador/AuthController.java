@@ -17,6 +17,9 @@ public class AuthController {
 
     @PostMapping("/register")
     public String registerUser(@RequestBody Usuario user) {
+        if (user.getPassword() == null || user.getPassword().isEmpty()) {
+            return "Password cannot be null or empty";
+        }
         return authService.register(user);
     }
 
@@ -24,5 +27,4 @@ public class AuthController {
     public String loginUser(@RequestBody Usuario user) {
         return authService.login(user);
     }
-
 }

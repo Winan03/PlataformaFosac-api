@@ -16,6 +16,9 @@ public class AuthService {
     private PasswordEncoder passwordEncoder;
 
     public String register(Usuario user) {
+        if (user.getPassword() == null || user.getPassword().isEmpty()) {
+            throw new IllegalArgumentException("Password cannot be null or empty");
+        }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userRepository.save(user);
         return "User registered successfully";
